@@ -69,8 +69,7 @@ public class LoginActivity extends AppCompatActivity{
                 login.enqueue(new Callback<Results>() {
                     @Override
                     public void onResponse(Call<Results> call, Response<Results> response) {
-                        Log.d("username",response.body().getUsername());
-                        Log.d("password",response.body().getPassword());
+                       Log.d("message",response.body().getMessage());
                     }
 
                     @Override

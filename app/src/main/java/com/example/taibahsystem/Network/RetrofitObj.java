@@ -11,7 +11,7 @@ public class RetrofitObj {
     private static Retrofit RetrofitObj=null;
     public static void CreateRetrofitObj(){
         Retrofit retrofit=new Retrofit.Builder()
-                .baseUrl("http://192.168.8.104:81/gproject/")
+                .baseUrl("http://192.168.1.17/gproject/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         RetrofitObj=retrofit;
